@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Chonburi Attractions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+  body {
+    font-family: 'Itim', sans-serif;
+  }
+
+  .navbar-brand, .nav-link, .carousel-caption h5, .carousel-caption p, .card-title, footer h5, footer p, footer a {
+    font-family: 'Itim', sans-serif;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* ปรับให้ปุ่มติดต่ออยู่ที่มุมขวาล่าง */
+  .contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* ทำให้ปุ่มอยู่เหนือเนื้อหาอื่นๆ */
+  }
+  .banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="images/logo.png" alt="Chonburi Guide Logo" width="40" height="40" class="d-inline-block align-text-top">
+        Chonburi Guide</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- แบนเนอร์ -->
+  <div class="banner"></div>
+
+  <!-- About Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">About Chonburi Guide</h2>
+    <p>ชลบุรีเป็นจังหวัดที่เต็มไปด้วยสีสันและน่าสิ่งที่สนใจ มีทั้งชายหาดสวยงาม วัฒนธรรมที่หลากหลาย และกิจกรรมสนุก ๆ สำหรับนักท่องเที่ยว ไม่ว่าจะอยากพักผ่อนริมชายหาด เล่นกีฬาทางน้ำ หรือสนุกไปกับการเรียนรู้วัฒนธรรมท้องถิ่น ที่นี่ก็มีทุกอย่างให้คุณได้สัมผัส มาพบกับเว็บไซต์แนะนำแหล่งท่องเที่ยวที่ดีที่สุดในชลบุรีกันเถอะ และเตรียมตัวสนุกไปกับประสบการณ์ใหม่ ๆ ที่รอคุณอยู่ ได้ที่นี่!</p>
+
+    <!-- Grid Section for Tourist Attractions -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Pattaya Beach.jpg" class="card-img-top" alt="ชายหาดพัทยา"> <!-- <https://www.agoda.com/travel-guides/thailand/pattaya/a-week-in-pattaya-an-in-depth-exploration-of-beaches-temples-and-markets/> -->
+          <div class="card-body">
+            <h5 class="card-title">ชายหาดพัทยา</h5>
+          <p>หาดพัทยาเป็นชายหาดยอดนิยมในชลบุรี มีน้ำทะเลใส ทรายขาว และกิจกรรมทางน้ำมากมาย เช่น พายเรือ เจ็ทสกี หรือขี่ม้า คุณสามารถเดินเล่นริมชายหาด หรือแวะชมร้านค้าและร้านอาหารท้องถิ่นได้อย่างสะดวกสบาย</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Bangsaen.jpg" class="card-img-top" alt="ชายหาดบางแสน"> <!-- <https://travel.kapook.com/view270751.html> -->
+          <div class="card-body">
+            <h5 class="card-title">ชายหาดบางแสน</h5>
+            <p>หาดบางแสน ตั้งอยู่ในจังหวัดชลบุรี เป็นชายหาดยอดนิยมใกล้กรุงเทพฯ มีทัศนียภาพสวยงาม น้ำทะเลใส ทรายขาว และบรรยากาศเงียบสงบ<br>นักท่องเที่ยวสามารถสนุกกับการเล่นน้ำชายหาด พายเรือ หรือแวะชมตลาดบางแสนและแหล่งท่องเที่ยวใกล้เคียงได้</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Bangphra.jpg" class="card-img-top" alt="บางพระ"> <!-- <https://www.wongnai.com/trips/travel-at-chonburi> -->
+          <div class="card-body">
+            <h5 class="card-title">บางพระ</h5>
+            <p>อ่างเก็บน้ำบางพระ เป็นแหล่งน้ำขนาดใหญ่ที่มีความสวยงามและเงียบสงบ รายล้อมด้วยธรรมชาติที่เขียวขจี
+              เป็นสถานที่เหมาะสำหรับการพักผ่อนและทำกิจกรรมกลางแจ้ง ที่นี่มีบรรยากาศร่มรื่นและวิวทิวทัศน์ที่สวยงาม
+              เหมาะสำหรับผู้ที่ต้องการหนีจากความวุ่นวายในเมืองใหญ่และสัมผัสกับธรรมชาติอย่างแท้จริง</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/grandcanyon.jpg" class="card-img-top" alt="แกรนด์แคนยอน"> <!-- <https://www.wongnai.com/trips/travel-at-chonburi> -->
+          <div class="card-body">
+            <h5 class="card-title">แกรนด์แคนยอน</h5>
+            <p>จุดถ่ายรูปยอดฮิต วิวสวยงามราวกับแกรนด์แคนยอน เป็นสถานที่ท่องเที่ยวที่มีความสวยงามและเป็นเอกลักษณ์ ตั้งอยู่ในจังหวัดชลบุรี
+              เป็นแหล่งน้ำธรรมชาติที่มีการสร้างเป็นสระน้ำขนาดใหญ่ มีน้ำใสและสีน้ำทะเล</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/kohlarn.jpg" class="card-img-top" alt="เกาะล้าน"> <!-- <https://www.bangkokbiznews.com/health/social/1038643> -->
+          <div class="card-body">
+            <h5 class="card-title">เกาะล้าน</h5>
+          <p>นอกจากจะมีจุดชมวิวทะเลสวยๆ ให้ไปถ่ายรูปเพลินๆ แล้ว ยังมีจุดเช็คอินต่างๆ
+            รวมถึงร้านค้า ร้านอาหารมากมายให้ทุกคนได้ไปใช้ชีวิตชิลๆ แบบสโลว์ไลฟ์กัน</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Nong Nooch Tropical Garden.jpg" class="card-img-top" alt="สวนพฤกษศาสตร์นงนุช"> <!-- <https://www.feastographyblog.com/blog/nong-nooch-tropical-garden> -->
+          <div class="card-body">
+            <h5 class="card-title">สวนพฤกษศาสตร์นงนุช</h5>
+            <p>สวนพฤกษศาสตร์นงนุชเป็นสวนที่มีความหลากหลายของพันธุ์ไม้สวยงาม ทั้งสวนไทยและสวนต่างประเทศ มีการแสดงของสัตว์และการแสดงทางวัฒนธรรม เหมาะสำหรับการเดินชมธรรมชาติและการถ่ายรูป</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Pattaya Floating Market.jpg" class="card-img-top" alt="ตลาดน้ำพัทยา"> <!-- <https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pattayafloatingmarket.com%2F&psig=AOvVaw23G8lbJyOD5iVUyOd2xHgf&ust=1736590902309000&source=images&cd=vfe&opi=89978449&ved=0CAMQjB1qFwoTCLDGk7H36ooDFQAAAAAdAAAAABAE> -->
+          <div class="card-body">
+            <h5 class="card-title">ตลาดน้ำพัทยา</h5>
+          <p>ตลาดน้ำพัทยาเป็นตลาดที่มีเอกลักษณ์ด้วยเรือพายขายของในน้ำ มีสินค้าหลากหลายทั้งของกิน ของฝาก และงานฝีมือจากท้องถิ่น นอกจากนี้ยังมีบรรยากาศสบายๆ เหมาะแก่การเดินเที่ยวชมและสัมผัสวัฒนธรรมไทยแบบดั้งเดิม</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/grape.jpg" class="card-img-top" alt="ไร่องุ่นซิลเวอร์เลค"> <!-- <https://www.facebook.com/wanlatravel/posts/-%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%8B%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%84-silverlake-%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%AD%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%AB%E0%B8%B5%E0%B8%9A-%E0%B8%88%E0%B8%8A%E0%B8%A5%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%8B%E0%B8%B4%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A5/751512075636691/> -->
+          <div class="card-body">
+            <h5 class="card-title">ไร่องุ่นซิลเวอร์เลค</h5>
+          <p>ไร่องุ่นซิลเวอร์เลคเป็นแหล่งท่องเที่ยวที่มีไร่องุ่นสวยงาม บรรยากาศดี เหมาะแก่การถ่ายรูปและสัมผัสธรรมชาติ พร้อมลิ้มรสไวน์สดจากไร่ และเพลิดเพลินกับวิวทะเลพัทยาได้อีกด้วยค่ะ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+  <button type="button" class="btn btn-primary contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Contact Us
+  </button>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact Info</h5>
+          <p>Email: 66160263@go.buu.ac.th</p>
+          <p>Phone: 083-750-3729</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com/urnothyn?locale=th_TH">Facebook</a> | <a href="https://x.com/22FEXP">Twitter</a> | <a href="https://Instagram.com/urnothyn">Instagram</a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>&copy; 2025 Chonburi Guide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+
+</html>
