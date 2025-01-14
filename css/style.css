@@ -1,0 +1,187 @@
+/* Reset styles for consistent design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Itim', sans-serif;
+    background-color: #e7e7e7; /* Soft background color */
+    color: #515050; /* Dark text color */
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #959528; /* Dark color for navbar */
+    border-bottom: 2px solid #7e715c; /* Bottom border with light color */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #af0000; /* Soft text color for navbar */
+    font-size: 1.1rem;
+  }
+  
+  .navbar-brand:hover, .nav-link:hover {
+    color: #5e5e5e; /* Hover effect with lighter color */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fffefc; /* Light color for toggler icon */
+  }
+  
+  /* Main Content Styling */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 15px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #eae6e6;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    color: #2D2D2B;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Card Image Styling */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form Styling */
+  .contact-form input, .contact-form textarea {
+    border-radius: 5px;
+    border: 1px solid #EAE6DF;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #464440;
+  }
+  
+  .contact-form button {
+    background-color: #2D2D2B;
+    color: #EAE6DF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #908576;
+  }
+  
+  /* Map Section Styling */
+  .map-container {
+    background-color: #EAE6DF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #2D2D2B;
+    color: #575757;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  footer h5, footer p {
+    color: #67553d;
+  }
+  
+  footer a {
+    color: #c20a0a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #301cb4;
+    text-decoration: underline;
+  }
+  
+  /* Social Links Styling */
+  .social-links a {
+    margin-right: 15px;
+    color: #EAE6DF;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #A39786;
+  }
+  
+  /* Floating Contact Button */
+  .contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #811910;
+    color: rgb(228, 228, 228);
+    padding: 12px 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #3a0508;
+  }
+  
+  /* Carousel Overlay Styling */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem; /* ขนาดตัวอักษรเริ่มต้น */
+  padding: 10px;
+  width: 90%; /* เพิ่มความกว้างเพื่อให้ข้อความไม่ถูกบีบ */
+  z-index: 10; /* เพิ่ม z-index เพื่อให้ข้อความ Overlay อยู่ด้านบน */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้กับข้อความ */
+}
+
+    .contact-form button {
+      width: 100%;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
+  
+    footer {
+      padding: 1rem 0;
+    }
+  
